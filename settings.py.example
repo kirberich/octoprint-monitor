@@ -1,0 +1,15 @@
+# Host of the octoprint server
+OCTOPRINT_HOST = 'http://example.com:5000'
+
+# Octoprint api key. You can get this in the settings
+API_KEY = ''
+
+# Activate night mode at this hour of the day
+NIGHT_FROM_HOUR = 23
+
+# Deactivate nigiht mode at this hour of the day
+NIGHT_UNTIL_HOUR = 8
+
+# Temperature above which to display a warning in night mode
+# This should be 10-20 degrees or so above ambient temperature
+COLD_TEMPERATURE = 40
