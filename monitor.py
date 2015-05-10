@@ -77,11 +77,13 @@ class Monitor(object):
         if job_status['progress']['printTime']:
             percent_finished = int(round(float(job_status['progress']['completion'])))
 
-            estimated_left = int(job_status['progress']['printTimeLeft'])/60
-            # Sometimes the estimation is completely borked and reports negative numbers.
-            if estimated_left < 0:
+            try:
+                estimated_left = int(job_status['progress']['printTimeLeft'])/60
+                # Sometimes the estimation is completely borked and reports negative numbers.
+                if estimated_left < 0:
+                    estimated_left = "??"
+            except:
                 estimated_left = "??"
-
             time_elapsed = int(job_status['progress']['printTime'])/60
         else:
             percent_finished = 0
@@ -95,8 +97,6 @@ class Monitor(object):
         self.display.draw_text("Total: {}m".format(estimated_total), 4)
         self.display.draw_text("Elapsed: {}m".format(time_elapsed), 5)
         self.display.draw_text("Remaining: {}m".format(estimated_left), 6)
-
-        self.display.update()
 
     def draw_night_display(self):
         if self.current_temp > self.cold_temp_threshold or self.target_temp > self.cold_temp_threshold:
