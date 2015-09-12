@@ -5,6 +5,7 @@ body {
 	color: #555;
 	text-align: center;
 	cursor: none;
+	margin: 0;
 }
 
 h1, h2 {
@@ -21,7 +22,6 @@ h2 {
 
 main {
 	position: relative;
-	border: 1px solid black;
 	width: 840px;
 	height: 400px;
 	padding-top: 50px;
