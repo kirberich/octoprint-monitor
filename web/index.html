@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Octoprint</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="monitor.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<main class="standby">
+			<div id="data-printing">
+				<h1 class="state"></h1>
+				<h2 class="job_name"></h2>
+
+				<div class="temp"></div>
+				<div class="progress">
+					<div class="estimated_time_total"></div>
+					<span class="time_elapsed"></span>
+					<span class="estimated_time_remaining"></span>
+				</div>
+				<div class="progressbar">
+					<div class="progress-indicator"></div>
+				</div>
+			</div>
+
+			<div id="data-standby">
+				<h1 class="state"></h1>
+				<div class="temp">
+					<div class="current_temp"></div>
+					<div class="target_temp"></div>
+				</div>
+			</div>
+		</main>
+		<script src="monitor.js"></script>
+	</body>
+</html>
