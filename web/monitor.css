@@ -22,7 +22,7 @@ h2 {
 
 main {
 	position: relative;
-	width: 840px;
+	width: 800px;
 	height: 400px;
 	padding-top: 50px;
 }
@@ -56,7 +56,7 @@ main {
 
 .progress {
 	position: absolute;
-	width: 840px;
+	width: 800px;
 	bottom: 30px;
 }
 
@@ -67,7 +67,7 @@ main {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	height: 15px;
-	width: 818px;
+	width: 778px;
 }
 
 .progressbar .progress-indicator {
