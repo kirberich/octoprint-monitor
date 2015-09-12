@@ -60,6 +60,7 @@ function update() {
 		estimated_time_remaining = data.progress.printTimeLeft;
 
 		var progress_percent = data.progress.completion;
+		$(".percent").text(Math.round(progress_percent) + "%");
 		$(".progress-indicator").css("width", progress_percent + "%");
 
 		$(".job_name").text(job_name);

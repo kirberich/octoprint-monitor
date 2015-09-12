@@ -31,6 +31,10 @@ main {
 	margin-top: 30px;
 }
 
+.percent {
+	font-size: 70pt;
+}
+
 .printing #data-printing {
 	display: block;
 }
