@@ -41,11 +41,12 @@ function update() {
 			$(".state").text("Printing");
 			$("main").removeClass("standby").addClass("printing");
 		} else {
-			$(".state").text("Standing By");
+			$(".state").text("OFF");
 			$("main").addClass("standby").removeClass("printing");
 		}
 
 		$(".temp").text("Temperature: " + current_temp + '°' + " / " + target_temp + '°');
+		$(".temp-standby").text("Temperature: " + current_temp + '°');
 	});
 
 	$.ajax({

@@ -27,12 +27,16 @@ main {
 	padding-top: 50px;
 }
 
-.temp {
+.temp, .temp-standby {
 	margin-top: 30px;
 }
 
 .percent {
 	font-size: 70pt;
+}
+
+#data-standby {
+	padding-top: 140px;
 }
 
 .printing #data-printing {
