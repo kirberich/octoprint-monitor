@@ -43,7 +43,6 @@ function update() {
 		} else {
 			$(".state").text("Standing By");
 			$("main").addClass("standby").removeClass("printing");
-			$("main").removeClass("standby").addClass("printing");
 		}
 
 		$(".temp").text("Temperature: " + current_temp + '°' + " / " + target_temp + '°');
